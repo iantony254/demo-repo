@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!-- This is how HTML comments look like -->
+<html>
+<!-- the title will appear on the page-->
+<head>
+<title>Employee Interests Survey</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="cssintro.css">
+</head>
+<body>
+<!-- as it is a survey form, we will need to submit the details, hence we use form -->
+<!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+<form action="http://google.co.in">
+<!-- If we remove this, every thing will move to the left of the page-->
+<div align="left">
+<!--Adds a heading to the form-->
+<div_header>
+<header><h1>Employee Interests Survey form</h1></header>
+</div_header>
+
+<div_input>
+
+<div_name>    
+<p>Full Name:</p>
+<!-- Input type text for small texts, specify size -->
+<input type="text" name="UserName" size=58 maxlength=35 value="">
+<!--Adds spaces - remove and see what happens -->
+</div_name>
+
+
+<div_dept>
+<p>Department:</p>
+<input type="text" name="Dept" size=58 maxlength=35 value=""> 
+</div_dept>
+
+
+<div_about>
+<p>Tell us a little about yourself:</p>
+<!-- For writing lot of text like descriptions with text wrapping,
+if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+<textarea name="Comments" cols=60 rows=4></textarea>
+</div_about>
+
+</div_input> 
+
+<div_radio>
+<p>Do you exercise at home?</p>
+<!-- Radio buttons help you choose one out of the many values -->
+<ul class="card">
+    <li><input type="radio" name="exe" value=1>Yes</li>
+    <li><input type="radio" name="exe" value=2>No</li>
+</ul>
+</div_radio>
+
+
+<div_chkbx >
+<p>How do you like to read about your favorite topics?</p>
+<!--Checkbox lets you select multiple options -->
+<ul class="card">
+    <li><input type="checkbox" name="Books">Books</li>
+    <li><input type="checkbox" name="Web">Online resources</li>
+    <li><input type="checkbox" name="Phone">Phone apps</li>
+    <li><input type="checkbox" name="Magazines">Magazines</li>
+</ul>
+</div_chkbx>
+
+<div_drpdwn >
+<p>What genre of movies do you like?</p>
+<!--Select box lets you choose one of the multiple dropdown options-->
+<select name="moviepref">
+<option value=1 selected = "true">comedy
+<option value=2 >romance
+<option value=3 >thriller
+<option value=4 >horror
+<option value=5 >biopic
+</select>
+</div_drpdwn>
+
+<div_submit>
+<!--submits the information entered in the form by the user -->
+<p><input type=submit value="Submit form"></p>
+</div_submit>
+
+</div>
+</form>
+</body>
+</html>
